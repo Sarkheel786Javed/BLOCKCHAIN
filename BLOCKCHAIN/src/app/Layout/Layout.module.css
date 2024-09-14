@@ -1,0 +1,28 @@
+.layout-main{
+    height: 100vh;
+}
+.sidebar_show{
+display: block;
+height: calc(100vh - 48px);
+width: 250px;
+border-right: 1px solid lightgrey;
+overflow-y: auto;
+overflow-x: hidden;
+}
+.sidebar_hide{
+display: none;
+border-right: 0px solid lightgrey;
+width: 0;
+}
+.content_show{
+    width: calc(100% - 250px);
+    height: calc(100vh - 48px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.content_Hide{
+    width: 100%;
+    height: calc(100vh - 48px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
