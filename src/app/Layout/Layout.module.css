@@ -18,15 +18,17 @@
 }
 
 .content_show {
+    margin-top: 49.3px;
     width: calc(100% - 250px);
-    height: calc(100vh - 48px);
+    min-height: calc(100vh - 73.3px);
     overflow-y: auto;
     overflow-x: auto;
 }
 
 .content_Hide {
     width: 100%;
-    height: calc(100vh - 48px);
+    margin-top: 49.3px;
+    min-height: calc(100vh - 73.3px);
     overflow-y: auto;
     overflow-x: auto;
 }

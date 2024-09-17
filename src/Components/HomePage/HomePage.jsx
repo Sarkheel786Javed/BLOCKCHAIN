@@ -1,10 +1,9 @@
-import Particule from "./particles"
-
+import Particles from "./particles/Particles"
 
 function HomePage() {
   return (
     <div>
-      {/* <Particule/> */}
+      <Particles/>
     </div>
   )
 }

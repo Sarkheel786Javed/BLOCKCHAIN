@@ -1,8 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Navbar.module.css'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { isSidebarOpen, isSidebarClose } from '../Sidebar/Slice/SidebarSlice'
 function Navbar() {
+  ////////// redux /////////////////
+  const dispatch = useDispatch()
+  const SidebarOpen = useSelector((state) => state.Sidebar.value)
+  const handleSidebar = () => {
+    if (SidebarOpen === false) {
+      dispatch(isSidebarOpen())
+    } else {
+      dispatch(isSidebarClose())
+    }
+
+  }
   const location = useLocation()
+
   const Tabs = [
     {
       name: "Home",
@@ -57,6 +71,9 @@ function Navbar() {
     <div className={`w-100 ${styles.main}`}>
       <div className={`${styles.main_inner}`}>
         <div className="d-flex justify-content-start align-items-center">
+          <div className={`bi bi-list fs-1 mx-2 ${isSmallScreen === true ? "d-block" : "d-none"}`}
+            onClick={handleSidebar}
+          />
           <img
             src="images/ether.png"
             alt="logo"
@@ -107,5 +124,4 @@ function Navbar() {
     </div>
   )
 }
-
 export default Navbar
