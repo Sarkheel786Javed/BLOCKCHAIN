@@ -7,11 +7,9 @@ canvas {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #0b0c22;
     /* background-position: 20% 50%; */
-    display: flex;
-    justify-content: center;
 }
 
 /* ---- stats.js ---- */
@@ -32,7 +30,36 @@ canvas {
     font-family: Helvetica, Arial, sans-serif;
     /* font-weight: bold; */
 }
-
+@media (max-width: 767px) {
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 120vh;
+        padding-bottom: 50px;
+        background-color: #0b0c22;
+        /* background-position: 20% 50%; */
+    } 
+    .count-particles {
+        /* background: #0000003b; */
+        position: absolute;
+        top: 15%;
+        left: 0%;
+        right: 0%;
+        width: 98%;
+        /* padding: 10px; */
+        color: #ffffff;
+        /* font-size: .8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px; */
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        /* font-weight: bold; */
+    }
+    .js-count-particles {
+        font-size: 1em;
+    }
+}
 .js-count-particles {
     font-size: 1.1em;
 }

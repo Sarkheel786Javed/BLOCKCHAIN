@@ -1,34 +1,46 @@
 .layout-main {
-    padding-top: 60px;
+  padding-top: 60px;
+  position: relative;
 }
-
+.Scrol_Button {
+  cursor: pointer;
+  position: fixed;
+  top: 80vh;
+  right: 0;
+  background-color: #0b0c22;
+  color: aliceblue;
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 .sidebar_show {
-    display: block;
-    height: calc(100vh - 24px);
-    width: 250px;
-    border-right: 1px solid lightgrey;
-    overflow-y: auto;
-    overflow-x: hidden;
+  position: f;
+  display: block;
+  height: calc(100vh - 24px);
+  width: 250px;
+  padding-top: 70px;
+  /* border-right: 1px solid rgb(78, 78, 78); */
+  background-color: #0b0c22;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .sidebar_hide {
-    display: none;
-    border-right: 0px solid lightgrey;
-    width: 0px;
+  display: none;
+  border-right: 0px solid rgb(157, 157, 157);
+  width: 0px;
 }
 
 .content_show {
-    margin-top: 49.3px;
-    width: calc(100% - 250px);
-    min-height: calc(100vh - 73.3px);
-    overflow-y: auto;
-    overflow-x: auto;
+  width: calc(100% - 250px);
+  height: calc(100vh - 24px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content_Hide {
-    width: 100%;
-    margin-top: 49.3px;
-    min-height: calc(100vh - 73.3px);
-    overflow-y: auto;
-    overflow-x: auto;
+  width: 100%;
+  min-height: calc(100% - px);
+  overflow-y: auto;
+  overflow-x: auto;
 }

@@ -71,8 +71,8 @@ function Particles() {
   }, []);
 
   return (
-    <div>
-      <div ref={particlesContainer} id="particles-js"></div>
+    <div className="w-100">
+      <div className="w-100" ref={particlesContainer} id="particles-js"></div>
       <div className="count-particles text-center">
         <h1 className="text-center">Build a new kind of Decentralized</h1>
         <span className="text-center fs-6">

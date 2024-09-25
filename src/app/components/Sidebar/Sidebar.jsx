@@ -1,9 +1,9 @@
 import React from 'react'
-
+import styles from './Sidebar.module.css'
 function Sidebar() {
   return (
-    <div className='pt-5 bg-dark' style={{ height: "100%" }}>
-      Sidebar
+    <div className='border-end h-100 border-secondary'>
+      
     </div>
   )
 }
